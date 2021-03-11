@@ -1,0 +1,19 @@
+- name: Actions Ecosystem Action Create Issue
+  # You may pin to the exact commit or the version.
+  # uses: actions-ecosystem/action-create-issue@b02a3c1d9d929a5839315bd255e40389f0dab627
+  uses: actions-ecosystem/action-create-issue@v1.0.0
+  with:
+    # A GitHub token.
+    github_token: 
+    # The title of the created issue.
+    title: 
+    # The body of the created issue.
+    body: # optional
+    # The owner and repository name. e.g.) Codertocat/Hello-World
+    repo: # optional, default is ${{ github.repository }}
+    # The labels which are added to the created issue when it's created. Must be separated with line breaks if there're multiple labels.
+    labels: # optional
+    # The number of the milestone to which the created issue is added when it's created.
+    milestone: # optional
+    # The assignees which are assigned to the created issue when it's created. Must be separated with line breaks if there're multiple assignees.
+    assignees: # optional
